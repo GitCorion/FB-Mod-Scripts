@@ -50,9 +50,9 @@ minFileSize = any{ minFileSize.toLong() }{ 50 * 1000L * 1000L }
 minLengthMS = any{ minLengthMS.toLong() }{ 10 * 60 * 1000L }
 
 // series/anime/movie format expressions
-seriesFormat   = any{ seriesFormat   }{ '{plex}' }
-animeFormat    = any{ animeFormat    }{ '{plex}' }
-movieFormat    = any{ movieFormat    }{ '{plex}' }
+seriesFormat   = any{ seriesFormat   }{ '{n} - {s00e00} - {t} {source}-{vf}' }
+animeFormat    = any{ animeFormat    }{ '{n} - {s00e00} - {t} {source}-{vf}' }
+movieFormat    = any{ movieFormat    }{ '{n} ({y}) {source}-{vf}' }
 musicFormat    = any{ musicFormat    }{ '{plex}' }
 unsortedFormat = any{ unsortedFormat }{ 'Unsorted/{file.structurePathTail}' }
 
