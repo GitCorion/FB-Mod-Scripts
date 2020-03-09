@@ -52,7 +52,7 @@ minLengthMS = any{ minLengthMS.toLong() }{ 10 * 60 * 1000L }
 // series/anime/movie format expressions
 seriesFormat   = any{ seriesFormat   }{ '{n} - {s00e00} - {t} {source}-{vf}' }
 animeFormat    = any{ animeFormat    }{ '{n} - {s00e00} - {t} {source}-{vf}' }
-movieFormat    = any{ movieFormat    }{ '{n} ({y}) {source}-{vf}' }
+movieFormat    = any{ movieFormat    }{ '{n} {y} {source}-{vf}' }
 musicFormat    = any{ musicFormat    }{ '{plex}' }
 unsortedFormat = any{ unsortedFormat }{ 'Unsorted/{file.structurePathTail}' }
 
